@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.width {
+    width: 45rem;
+}
+
+.margin-right {
+    margin-right: 4rem;
+}
+
+.bg-color {
+    background-color: rgb(226, 188, 226);
+}
+
+.bg-image {
+    background-image: url('https://steamuserimages-a.akamaihd.net/ugc/942835959905280384/B7AD9723CF99F61D82027704F2FFDD4230E5A1D1/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn {
+    transition-duration: 0.3s;
+    background-color: rgb(180, 109, 216);
+    color: black;
+}
+
+.btn:hover {
+    background-color: black;
+    color: rgb(180, 109, 216);
+}
+
+.margin-top {
+    margin-top: 9rem;
+}
+
+.font-style {
+    font-family: 'Mogra', cursive;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    text-shadow: 2px 2px 8px rgb(158, 26, 158);
+    font-size: 6rem;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}

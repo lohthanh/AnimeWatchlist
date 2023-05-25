@@ -1,0 +1,9 @@
+#anime-link {
+    color: grey;
+    text-decoration: line-through;
+}
+
+#animeResults {
+    width: 50%;
+    margin-left: 25rem;
+}

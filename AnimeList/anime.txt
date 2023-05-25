@@ -1,0 +1,12 @@
+SELECT * FROM users;
+SELECT * FROM friendships;
+INSERT INTO friendships (user_id, friend_id)
+VALUES (3,2);
+SELECT users2.username AS friend_name FROM users JOIN friendships ON users.id = friendships.user_id LEFT JOIN users AS users2 
+ON users2.id = friendships.friend_id WHERE users.id = 3;
+SELECT * FROM friendships JOIN users ON friendships.user_id = users.id WHERE user_id = 3 ;
+SELECT * FROM users JOIN friendships ON users.id = friendships.user_id LEFT JOIN users AS users2 
+ON users2.id = friendships.friend_id WHERE users.id = 3;
+SELECT users.username, users2.username AS friend_name FROM users, user2 WHERE user_id = 3;
+SELECT * FROM users JOIN friendships ON friendships.user_id = users.id WHERE friend_id = 2;
+SELECT * FROM friendships JOIN users ON friendships.friend_id = users.id WHERE user_id = 3;
